@@ -1,0 +1,56 @@
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+}
+
+header{
+background:#333;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 20px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+section{
+padding:20px;
+}
+
+#lista-projetos{
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+gap:20px;
+}
+
+.projeto{
+border:1px solid #ccc;
+padding:15px;
+border-radius:5px;
+}
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:10px;
+}
+
+/* Responsividade */
+
+@media(max-width:600px){
+header{
+flex-direction:column;
+}
+}
